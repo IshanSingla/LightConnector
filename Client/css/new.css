@@ -1,0 +1,377 @@
+:root {
+  --primary-color: linear-gradient(-45deg, #dd964e, #712a14);
+  --secondary-color: rgb(32, 26, 26);
+  --third-color: rgba(8, 10, 14, 0.817);
+  --forth-color: #faede2fe;
+}
+
+.dark-theme {
+  --primary-color: linear-gradient(
+    112.1deg,
+    rgb(25, 30, 45) 11.4%,
+    rgb(41, 53, 92) 70.2%
+  );
+  --secondary-color: rgb(158, 172, 220);
+  --third-color: rgb(142, 221, 228);
+  --forth-color: #0b0907fe;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: var(--primary-color);
+  background-color: #0d0b0c;
+  background-position: center;
+  overflow-x: hidden;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: thansparent;
+  z-index: 2;
+
+  box-shadow: var(--secondary-color) 2px;
+}
+
+.nav-icon {
+  width: 5rem;
+}
+
+.mobilenew {
+  display: none;
+}
+
+.ham {
+  padding: 10px 0 0 20px;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 935px) {
+  .mobilenew {
+    display: block;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .desktopnew {
+    display: none;
+  }
+}
+
+.moonImg {
+  max-width: 40px;
+}
+
+.moonImg img {
+  width: 40px;
+  background-color: var(--forth-color);
+  border-radius: 50%;
+  box-shadow: 4px 14px 24px var(--third-color);
+}
+
+.newnewmain {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  backdrop-filter: blur(2px);
+  justify-content: center;
+}
+
+.qrbox {
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 5px 5px 5px 10px var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 376px) {
+  .newnewmain {
+    margin: auto auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+  }
+}
+
+.newmainimg {
+  height: 34rem;
+}
+
+.heroPic-div {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .newmainimg {
+    margin-top: -100px;
+    height: 400px;
+  }
+
+  .moonImg {
+    margin-left: 12rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newmainimg {
+    padding-left: 40px;
+  }
+
+  .ham {
+    height: 30px;
+  }
+
+  .heroPic-div {
+    display: block;
+    height: 100px;
+  }
+
+  .newmainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .newmainimg {
+    margin-top: -100px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .newmainimg {
+    height: 425px;
+  }
+}
+
+@media (max-width: 991px) {
+  .newmainimg {
+    height: 310px;
+  }
+
+  .moonImg {
+    margin-left: 12rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .newmainimg {
+    height: 300px;
+  }
+
+  .moonImg {
+    margin-left: 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newmainimg {
+    margin-left: 0.5rem;
+    height: 250px;
+  }
+}
+
+.customFlex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+button,
+input {
+  outline: none;
+}
+
+.lightBg {
+  overflow: hidden;
+  background: transparent;
+  height: 100vh;
+}
+
+.flex,
+.mid-it {
+  display: flex;
+}
+
+.mid-it {
+  align-items: center;
+  justify-content: center;
+}
+
+.text-paste-wrapper {
+  margin: 24px auto;
+}
+
+.text-paste-wrapper .input-wrapper {
+  height: 30px;
+  position: relative;
+}
+
+.text-paste-wrapper .input-wrapper > input {
+  background: hsla(0, 11%, 91%, 0.221);
+  border: 3px solid rgba(14, 15, 25, 0.6);
+  border-radius: 10px;
+  font-size: larger;
+  height: 100%;
+  padding: 25px;
+  width: 100%;
+}
+
+.text-paste-wrapper .input-wrapper > input::-webkit-input-placeholder {
+  color: #c3c3c3;
+}
+
+.text-paste-wrapper .input-wrapper > input:-ms-input-placeholder {
+  color: #c3c3c3;
+}
+
+.text-paste-wrapper .input-wrapper > input::placeholder {
+  color: #c3c3c3;
+}
+
+.text-paste-wrapper .input-wrapper > button {
+  background: #efefef;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px 4px rgba(14, 15, 25, 0.2);
+  height: 30px;
+  position: absolute;
+  right: 54px;
+  top: 14px;
+  transition: 0.2s;
+  width: 30px;
+}
+
+.text-paste-wrapper .input-wrapper > button:active {
+  box-shadow: none;
+}
+
+.text-paste-wrapper .sendicon-wrapper {
+  aspect-ratio: 1/1;
+  background: #0e0f19;
+  border-radius: 50%;
+  height: 34px;
+  margin-left: 12px;
+  margin-top: 8px;
+  padding: 4px;
+  width: 34px;
+}
+
+.connectedpage-three-icons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  padding-top: 24px;
+}
+
+.connectedpage-three-icons-wrapper .icon-wrapper {
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+  flex-direction: column;
+  height: 60px;
+  margin: 0 4px;
+  transition: 0.2s;
+}
+
+.connectedpage-three-icons-wrapper .highlightedSelected {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  color: var(--forth-color);
+  padding: 4px;
+}
+
+.ortext {
+  color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+.stuff-list-wrapper {
+  margin-top: 30px;
+  padding: 0 14px;
+}
+
+.stuff-list-wrapper .whosent-indicator {
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+.stuff-list-wrapper .title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.each-stuff-wrapper {
+  border-bottom: 2px solid #a8a8a8;
+  margin-top: 12px;
+}
+
+.text-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.text-item .data {
+  width: 80%;
+}
+
+.text-item .copy {
+  flex: 20 1;
+  flex-direction: column;
+  position: relative;
+  transition: 0.4s;
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+.text-item .copy:active {
+  opacity: 0.1;
+}
+
+.text-item .copy > svg {
+  background: #d5d5d5;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.file-send-wrapper .choosefile-button {
+  background: #fa9f42;
+  border-radius: 14px;
+  color: #0e0f19;
+  font-weight: 700;
+  padding: 8px 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 34rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.scannerclass{
+  height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .file-send-wrapper .choosefile-button {
+    margin-left: 3rem;
+  }
+}
