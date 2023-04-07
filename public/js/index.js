@@ -23,7 +23,6 @@ function onScanSuccess(qrCodeMessage) {
 }
 // qr scan error
 function onScanError(errorMessage) {
-  alert(`message: "unable to scan"`);
 }
 
 // device check for mobile or pc for scanner or joiner
